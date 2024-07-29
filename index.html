@@ -152,11 +152,29 @@
                 <a href="images/ripunjaycv3.pdf" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div class="form-content">
+            
+                        <input type="hidden" name="apikey" value="a5aca191-5b59-465e-84cf-1ccc93144b68">
+            
+                        <h1>Message Me</h1>
+            
+                        <div class="name">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+            
+                        <div class="email">
+                            <input type="text" name="email" placeholder="Your email">
+                        </div>
+            
+                        <div class="msg">
+                            <input type="text" name="message" placeholder="Your Message" >
+                        </div>
+            
+                        <div class="submit">
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
